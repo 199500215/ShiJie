@@ -1,4 +1,4 @@
-package cn.edu.neusoft.julyfinal.shijie.entity;
+package cn.edu.neusoft.julyfinal.shijie;
 
 import android.app.Application;
 import android.content.Context;
@@ -13,14 +13,16 @@ import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 
 public class NewsApp extends Application {
     private static Context context;
-    //初始化设置
+    //初始化
     public static void initImageLoader(Context context) {
-        //一些相关的设置
+        //一些相关的设置（均为默认）
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
+
                 .denyCacheImageMultipleSizesInMemory()
                 .threadPriority(Thread.NORM_PRIORITY - 2)
                 .tasksProcessingOrder(QueueProcessingType.LIFO)
                 .build();
+        //初始化设置
         ImageLoader.getInstance().init(config);
     }
     @Override
