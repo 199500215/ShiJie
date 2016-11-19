@@ -4,5 +4,9 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">设置</string>
+    <string name="action_favorite" translatable="false">收藏夹</string>
+    <string name="favorite_button">收藏</string>
+    <string name="action_clean">清除缓存</string>
+    <string name="action_download">离线所有内容</string>
 </resources>
