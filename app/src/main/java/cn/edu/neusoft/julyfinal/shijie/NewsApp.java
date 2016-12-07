@@ -30,11 +30,9 @@ public class NewsApp extends Application {
         super.onCreate();
         context = getApplicationContext();
         initImageLoader(this);
-
     }
     public static Context getContext(){
         return context;
     }
-
 }
 
